@@ -223,7 +223,7 @@ function App() {
       </section>
 
       <CompletedProjects projects={completed} onOpen={setSelectedId} onReopen={reopenProject} />
-      <footer><span>给自己留一点清楚的空间。</span><span>数据已连接 Supabase</span></footer>
+      <footer><span>给自己留一点清楚的空间。</span></footer>
       {editing && <ProjectForm project={editing} onSave={saveProject} onCancel={() => setEditing(null)} />}
       {notice && <div className="toast" role="status">{notice}</div>}
     </main>
